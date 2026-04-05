@@ -35,6 +35,15 @@ app.use(compression());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
+//domomaker-B
+app.use(session({
+  key: 'sessionid',
+  secret: 'Domo Arigato',
+  resave: false,
+  saveUninitialized: false,
+}));
+
+
 app.engine('handlebars', expressHandlebars.engine({ defaultLayout: '' }));
 app.set('view engine', 'handlebars');
 app.set('views', `${__dirname}/../views`);
