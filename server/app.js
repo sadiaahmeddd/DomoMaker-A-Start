@@ -46,4 +46,15 @@ app.use(session({
 
 app.engine('handlebars', expressHandlebars.engine({ defaultLayout: '' }));
 app.set('view engine', 'handlebars');
-app.set('views', `${__dirname}/../vie
+app.set('views', `${__dirname}/../views`);
+
+router(app);
+
+app.listen(port, (err) => {
+  if (err) {
+    throw err;
+  }
+
+
+  console.log(`Listening on port ${port}`);
+});
