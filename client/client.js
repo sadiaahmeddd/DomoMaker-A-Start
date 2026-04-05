@@ -7,6 +7,8 @@ const handleError = (message) => {
   document.getElementById('domoMessage').classList.remove('hidden');
 };
 
+
+//setup
 /* Sends post requests to the server using fetch. Will look for various
    entries in the response JSON object, and will handle them appropriately.
 */
