@@ -6,7 +6,7 @@ const mongoose = require('mongoose')
 const compression = require('compression')
 const favicon = require('serve-favicon')
 const expressHandlebars = require('express-handlebars')
-const expressHandlebars = require('express-handlebars')
+// const expressHandlebars = require('express-handlebars')
 const helmet = require('helmet')
 
 const router = require('./router.js')
@@ -43,6 +43,6 @@ app.listen(port, (err) => {
     throw err;
   }
 
-  
+
   console.log(`Listening on port ${port}`);
 });
