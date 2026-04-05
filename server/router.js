@@ -14,6 +14,8 @@ const router = (app) => {
 
   // Main app page
   app.get('/maker', controllers.Domo.makerPage);
+  //domomakerB
+  app.post('/maker', controllers.Domo.makeDomo);
 
   // Default route
   app.get('/', controllers.Account.loginPage);
