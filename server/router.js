@@ -18,7 +18,4 @@ const router = (app) => {
   app.post('/maker', controllers.Domo.makeDomo);
 
   // Default route
-  app.get('/', controllers.Account.loginPage);
-};
-
-module.exports = router;
+  app.get('

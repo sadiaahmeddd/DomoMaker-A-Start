@@ -20,14 +20,12 @@
   </section>
   
   <section id="domos">
-
-  </section>
-  
-  <div id="domoMessage" class='hidden'>
-    <img id="speech" src="/assets/img/speech.png" alt="speech box"/>
-    <h3><span id="errorMessage"></span></h3>
-    <img id="domo" src="assets/img/domo.png" alt="domo"/>
-  </div>
-  <script src="/assets/bundle.js"></script>
-</body>
-</html>
+    <section id="domos"></section>
+  {{#if domos}}
+    {{#each domos}}
+      <div class="domo">
+        
+        <img src="/assets/img/domoface.jpeg" alt="domo face" class="domoFace">
+        <h3 class="domoName">Name: {{this.name}}</h3>
+        
+        <h3 class="domoAge">Age: {{this.age}}</h3>
